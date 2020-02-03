@@ -21,3 +21,10 @@ console.log(name == 'shaun'); // this will return true.
 console.log(name == 'Shaun'); // this will return false.
 console.log(name > 'crystal'); // this will true as 's' is after 'c' in alphabet.
 console.log(name > 'Shaun'); // this will return true as uppercase are after lowercase
+
+// loose comparison (different types can still be equal)
+console.log(age == '25'); // this will return true even though they are different types.
+
+// strict comparison (different types cannot be equal)
+console.log(age === '25'); // this will return false as they are not the same type.
+console.log(age !== '30'); // this will also return false as they are not the same type
