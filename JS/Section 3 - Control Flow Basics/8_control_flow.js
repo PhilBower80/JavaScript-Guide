@@ -67,7 +67,6 @@ if (password.length >= 12 && password.includes('@')) {
 
 // SWITCH STATEMENTS
 //Switch statments use STRICT EQUALITY (===)
-
 const grade = 'D';
 
 switch (grade) {
