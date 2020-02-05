@@ -1,4 +1,5 @@
-const para = document.querySelector('p');
+const para = document.querySelector('h1');
+console.log(para);
 
-// console.log(para.innerText);
-para.innerText = 'ninjas are awesome!';
+const paras = document.querySelectorAll('p');
+console.log(paras);

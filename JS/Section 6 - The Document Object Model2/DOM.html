@@ -27,13 +27,17 @@
   </div>
   <div>
     <h3>HTMLCollection methods</h3>
+    <p>YOU CANNOT USE forEach on HTML collection</p>
     <a href="https://www.w3schools.com/jsref/dom_obj_htmlcollection.asp" target="_blank">Properties & Methods</a>
+
     <ul>
       <li>.item()</li>
       <li>.namedItem()</li>
     </ul>
 
     <h3>Node List methods</h3>
+    <p>You CAN USE forEach on nodelist</p>
+    <p>querySelector is a great way to access the node list.</p>
     <ul>
       <li>.item()</li>
       <li>.entries()</li>
@@ -47,15 +51,17 @@
   <hr>
 
 
-  <div class='random-content'>
-    <h2 id="heading">Hello world!</h2>
-    <p class='parag'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quibusdam cupiditate sunt rerum
+  <div class='content'>
+    <h2 id='heading' style='color: orange'>Hello world!</h2>
+    <p class='example-class-name'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quibusdam cupiditate
+      sunt rerum
       ipsa molestiae
       odio iusto minima labore laudantium. Dolor illum cum accusamus eaque quaerat soluta officia quibusdam qui?</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit architecto eos iure cumque officia aliquam illum
       consequatur ab ipsa quod vel ut sed, excepturi accusamus aut facere deleniti veniam ullam.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis culpa placeat optio, voluptate molestiae
       assumenda quos laboriosam quod ab, ducimus nihil praesentium natus cum non, aut nulla sapiente molestias.</p>
+    <p>This is the only paragraph that has the word unique</p>
   </div>
 
   <script src="sandbox.js"></script>
