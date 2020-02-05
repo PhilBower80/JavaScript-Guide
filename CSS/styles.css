@@ -1,4 +1,16 @@
-h1 i {
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  margin: auto;
+}
+
+.container h1 i {
   padding: 0 10px 0 10px;
+}
+
+.contents {
+  list-style: none;
 }
 /*# sourceMappingURL=styles.css.map */
