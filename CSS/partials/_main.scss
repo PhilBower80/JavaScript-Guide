@@ -2,35 +2,8 @@
 	display: flex;
 	width: 1200px;
 	margin: auto;
-
-	h1 {
-		i {
-			padding: 0 10px 0 10px;
-		}
-	}
 }
 
-.contents {
-	list-style: none;
-}
-
-.event-basics-ul {
-	li {
-		cursor: pointer;
-		list-style-type: none;
-		max-width: 200px;
-		padding: 8px;
-		margin: 8px auto;
-		background: #eee;
-		border: 1px dottedf #ddd;
-	}
-}
-
-.box {
-	width: 200px;
-	height: 200px;
-	margin: 10px 0;
-	background: #eee;
-	text-align: center;
-	padding: 20px;
+.fa-user-ninja {
+	padding: 0 10px 0 10px;
 }
