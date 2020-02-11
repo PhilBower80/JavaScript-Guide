@@ -1,9 +1,9 @@
-body {
-	background: #eee;
-}
+// body {
+// 	// background: #eee;
+// }
 
 form {
-	max-width: 200px;
+	width: 300px;
 	margin: 40px auto;
 	background: white;
 	padding: 10px;
@@ -13,4 +13,14 @@ input {
 	display: block;
 	margin: 10px auto;
 	padding: 4px;
+}
+
+// Keyup Validation styles
+
+.success {
+	border: 2px solid limegreen;
+}
+
+.error {
+	border: 2px solid crimson;
 }
