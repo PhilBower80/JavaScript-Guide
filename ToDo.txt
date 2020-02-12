@@ -1,8 +1,0 @@
-Name structure (section.video)
-1.01
-1.02
-4.36
-
-All JS in one folder.
-
-Then seperate note content (JS files) and put into a tutorial folder. None of these files will actually be scripted in the HTML. Just for notes.

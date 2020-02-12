@@ -53,7 +53,7 @@ body {
   margin: auto;
 }
 
-.fa-user-ninja {
+.fa-js {
   padding: 0 10px 0 10px;
 }
 
@@ -171,5 +171,17 @@ input {
 
 .error {
   border: 2px solid crimson;
+}
+
+@media (max-width: 1259px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

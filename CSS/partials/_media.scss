@@ -1,7 +1,13 @@
 @media (max-width: 1259px) {
+	.container {
+		width: 970px;
+	}
 }
 
 @media (max-width: 991px) {
+	.container {
+		width: 750px;
+	}
 }
 
 @media (max-width: 767px) {
