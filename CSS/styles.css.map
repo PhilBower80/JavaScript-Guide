@@ -7,7 +7,8 @@
         "partials/_main.scss",
         "partials/_thedom.scss",
         "partials/_popup.scss",
-        "partials/_forms.scss"
+        "partials/_forms.scss",
+        "partials/_media.scss"
     ],
     "names": [],
     "file": "styles.css"
