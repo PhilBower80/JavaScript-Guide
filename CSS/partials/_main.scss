@@ -3,6 +3,8 @@
 // 	margin: 0px;
 // }
 
+// BASE STYLES
+
 html {
 	box-sizing: border-box;
 }
@@ -19,6 +21,21 @@ body {
 	color: #f28221;
 }
 
+.items {
+	text-align: center;
+}
+
+.fa-js {
+	padding: 0 10px 0 10px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+// end of BASE STYLES
+
 // Home Page Button
 .home {
 	a {
@@ -29,26 +46,12 @@ body {
 		align-items: center;
 		background-color: #465223;
 		color: #f22872;
-		border: 1px solid #4169e1;
+		border: 1px solid #a3d82f;
 		text-transform: uppercase;
 		&:link {
 			text-decoration: none;
 		}
 	}
-}
-
-.container {
-	display: flex;
-	width: 1200px;
-	margin: auto;
-
-	.items {
-		margin: auto;
-	}
-}
-
-.fa-js {
-	padding: 0 10px 0 10px;
 }
 
 .contents {
@@ -59,7 +62,7 @@ body {
 	list-style: none;
 
 	a {
-		display: flex;
+		display: block;
 		justify-content: center;
 		align-items: center;
 		width: 450px;
