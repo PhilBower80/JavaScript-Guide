@@ -1,7 +1,4 @@
-* {
-	border: 1px solid red;
-	margin: 0px;
-}
+//
 
 // BASE STYLES
 
@@ -21,20 +18,23 @@ body {
 	color: #f28221;
 }
 
+// what is this???
 .items {
 	text-align: center;
 }
+// // // // // // //
 
-.fa-js {
+// rename the below on all pages and this style. Somehing logical like, 'js-icon'
+.js-icon {
+	display: block;
 	padding: 0 10px 0 10px;
+	font-size: 100px;
 }
 
 ul {
 	list-style: none;
 	padding: 0;
 }
-
-// end of BASE STYLES
 
 // Home Page Button
 .home {
@@ -54,27 +54,101 @@ ul {
 	}
 }
 
-.menu-btn {
-	padding: 0;
-	text-align: center;
-	margin: 0 auto;
-	font-size: 25px;
-	list-style: none;
+// end of BASE STYLES
 
-	a {
+// HOME PAGE
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0;
+	font-size: 1.75em;
+}
+
+// AVATAR
+//  this probably needs moving. Profile pic to be on about.html
+.avatar {
+	position: relative;
+	animation-name: slide-avatar;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+
+	img {
+		border-radius: 50%;
+	}
+}
+
+// end of Avatar
+
+// Burger Animation
+
+// BURGER
+
+// 5
+
+#burger {
+	cursor: pointer;
+	display: block;
+
+	span {
+		background: #f28221;
 		display: block;
-		justify-content: center;
-		align-items: center;
-		width: 450px;
+		width: 50px;
+		height: 7px;
+		margin-bottom: 10px;
+		position: relative;
+		top: 0;
+		transition: all ease-out 0.4s;
+	}
+}
+
+#burger-container.open span {
+	&:nth-child(1) {
+		transform: rotate(-45deg);
+		top: 17px; // this equals span height + span margin
+	}
+	&:nth-child(2) {
+		// width: 0;
+		left: -50px;
+		opacity: 0;
+	}
+
+	&:nth-child(3) {
+		transform: rotate(45deg);
+		top: -17px; // this equals span height + span margin
+	}
+}
+
+// end of BURGER
+
+.menu-btn {
+	a {
+		display: flex;
+		max-width: 500px;
 		height: 75px;
-		margin: 10px;
-		padding: 10px;
 		background-color: #a3d82f;
 		color: #f22872;
 		border: 1px solid #666;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 10px;
+		padding: 0;
+		font-size: 1.5em;
 
 		&:link {
 			text-decoration: none;
 		}
+		&:hover {
+			color: #f22872;
+		}
 	}
 }
+
+footer {
+	text-align: center;
+	margin: 50px auto;
+}
+
+// end of HOME PAGE
