@@ -17,8 +17,11 @@
 <body>
 
   <header class="container">
+
+
     <a href="index.html"><i class="fab fa-js js-icon"></i></a>
     <h1>Guide to Javascript</h1>
+
 
     <div id="burger-container">
       <div id="burger">
@@ -29,16 +32,45 @@
         </a>
       </div>
     </div>
+
+
   </header>
 
   <div class="container">
-    <h2>Functions & Methods</h2>
+    <h2>Local Storage</h2>
   </div>
+
+  <!-- <div class="home">
+    <a href="index.html">Home Page</a>
+  </div> -->
 
   <div class="container">
-    <ul class="people"></ul>
-  </div>
+    <div class="row">
+      <pre class="pre-scrollable">
+        <h3>Store data in local storage</h3>
+        <code>localStorage.setItem('name', 'mario');</code>
+        <code>localStorage.setItem('age', 50);</code>
 
+        <h3>Get data from local storage</h3>
+        <code>let name = localStorage.getItem('name');</code>
+        <code>let age = localStorage.getItem('age');</code>
+        <code>console.log(name, age);</code>
+
+        <h3>Updating data</h3>
+        <code>localStorage.setItem('name', 'luigi');</code>
+        <code>name = localStorage.getItem('name');</code>
+
+        <h3>Deleting storage data</h3>
+        <code>localStorage.removeItem('name');</code>
+        <code>localStorage.clear();</code>
+        <code>name = localStorage.getItem('name');</code>
+        <code>age = localStorage.getItem('age');</code>
+
+      </pre>
+
+
+    </div>
+  </div>
 
   <footer class="container">
 
@@ -49,8 +81,10 @@
   </footer>
 
 
+  <script src="JS\Section_14_Local_Storage\111_storing_and_getting_data.js"></script>
+  <script src="JS\Section_14_Local_Storage\112_deleting_storage_data.js"></script>
+  <script src="JS\Section_14_Local_Storage\113_stringifying_and_parsing_data.js"></script>
   <script src="JS\burgerMenu.js"></script>
-  <script src="JS\Section_4_Functions_&_Methods\36_Callback_Function_In_Action.js"></script>
 </body>
 
 </html>

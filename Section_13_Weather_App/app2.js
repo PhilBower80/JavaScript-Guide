@@ -5,14 +5,10 @@ const card = document.querySelector('.card');
 const details = document.querySelector('.details');
 const time = document.querySelector('img.time');
 const icon = document.querySelector('.icon img');
+const forecast = new Forecast();
 
 const updateUI = data => {
 	console.log(data);
-	// const cityDetails = data.cityDetails;
-	// const weather = data.weather;
-
-	// destructure properties
-	// easy way to get properties from an object and store them as a variable of the same name. No need to declare variables seperately as above variables that are now commented out.
 
 	const { cityDetails, weather } = data; // Destructure properties
 
@@ -32,16 +28,6 @@ const updateUI = data => {
 	const iconSrc = `../../Assets/icons/${weather.WeatherIcon}.svg`;
 	icon.setAttribute('src', iconSrc);
 
-	// If condition vs Ternary operator
-
-	// let timeSrc = null;
-	// if (weather.IsDayTime) {
-	// 	timeSrc = '../../Assets/day.svg';
-	// } else {
-	// 	timeSrc = '../../Assets/night.svg';
-	// }
-
-	// Ternary operator
 	let timeSrc = weather.IsDayTime
 		? '../../Assets/day.svg'
 		: '../../Assets/night.svg';
@@ -54,19 +40,6 @@ const updateUI = data => {
 	}
 };
 
-const updateCity = async city => {
-	// console.log(city);
-	const cityDetails = await getCity(city);
-	const weather = await getWeather(cityDetails.Key);
-
-	// return {
-	// 	cityDetails: cityDetails, // property: variable name,
-	// 	weather: weather          // property: variable name
-	// };
-
-	return { cityDetails, weather }; // because we are naming the property name the same as the variable...This is the Object Shorthand Notation.
-};
-
 cityForm.addEventListener('submit', e => {
 	// prevent default action
 	e.preventDefault();
@@ -76,7 +49,8 @@ cityForm.addEventListener('submit', e => {
 	cityForm.reset();
 
 	// update UI with new city
-	updateCity(city)
+	forecast
+		.updateCity(city)
 		// .then(data => console.log(data)) // use to get key info from console log to update HTML then replaced by the following line.
 		.then(data => updateUI(data))
 		.catch(err => console.log(err));
@@ -87,7 +61,8 @@ cityForm.addEventListener('submit', e => {
 
 // Check local storage and set search to last city searchedf
 if (localStorage.getItem('city')) {
-	updateCity(localStorage.getItem('city'))
+	forecast
+		.updateCity(localStorage.getItem('city'))
 		.then(data => updateUI(data))
 		.catch(err => console.log(err));
 }

@@ -1,4 +1,6 @@
-//
+// * {
+// 	border: 1px solid red;
+// }
 
 // BASE STYLES
 
@@ -18,40 +20,15 @@ body {
 	color: #f28221;
 }
 
-// what is this???
+// what is this??? // // // //
 .items {
 	text-align: center;
 }
 // // // // // // //
 
-// rename the below on all pages and this style. Somehing logical like, 'js-icon'
-.js-icon {
-	display: block;
-	padding: 0 10px 0 10px;
-	font-size: 100px;
-}
-
 ul {
 	list-style: none;
 	padding: 0;
-}
-
-// Home Page Button
-.home {
-	a {
-		display: flex;
-		width: 100px;
-		height: 50px;
-		justify-content: center;
-		align-items: center;
-		background-color: #465223;
-		color: #f22872;
-		border: 1px solid #a3d82f;
-		text-transform: uppercase;
-		&:link {
-			text-decoration: none;
-		}
-	}
 }
 
 // end of BASE STYLES
@@ -62,8 +39,26 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	text-align: center;
 	margin: 50px 0;
 	font-size: 1.75em;
+
+	a {
+		&:link {
+			text-decoration: none;
+		}
+		&:hover {
+			color: #f22872;
+		}
+		&:visited {
+			color: #f28221;
+		}
+		.js-icon {
+			display: block;
+			padding: 0 10px 0 10px;
+			font-size: 100px;
+		}
+	}
 }
 
 // AVATAR
@@ -79,13 +74,13 @@ header {
 	}
 }
 
-// end of Avatar
+// end of AVATAR
 
-// Burger Animation
+// BURGER MENU
 
-// BURGER
-
-// 5
+#burger-container {
+	margin-right: 10px;
+}
 
 #burger {
 	cursor: pointer;
@@ -120,12 +115,12 @@ header {
 	}
 }
 
-// end of BURGER
+// end of BURGER MENU
 
 .menu-btn {
 	a {
 		display: flex;
-		max-width: 500px;
+		max-width: 520px;
 		height: 75px;
 		background-color: #a3d82f;
 		color: #f22872;
@@ -141,7 +136,7 @@ header {
 			text-decoration: none;
 		}
 		&:hover {
-			color: #f22872;
+			color: black;
 		}
 	}
 }
@@ -149,6 +144,27 @@ header {
 footer {
 	text-align: center;
 	margin: 50px auto;
+
+	a {
+		&:link {
+			text-decoration: none;
+		}
+		&:hover {
+			color: #f22872;
+		}
+		&:visited {
+			color: #f28221;
+		}
+	}
 }
 
 // end of HOME PAGE
+
+// Local Storage
+// check out code blocks <pre> and <code> for Bootstrap, may be able to style these better!?
+
+pre {
+	color: #f28221;
+}
+
+// end of Local Storage
