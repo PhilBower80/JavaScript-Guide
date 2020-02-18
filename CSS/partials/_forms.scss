@@ -1,26 +1,25 @@
-// body {
-// 	// background: #eee;
+// form {
+// 	width: 300px;
+// 	margin: 40px auto;
+// 	background: white;
+// 	padding: 10px;
 // }
 
-form {
-	width: 300px;
-	margin: 40px auto;
-	background: white;
-	padding: 10px;
-}
+// input {
+// 	display: block;
+// 	margin: 10px auto;
+// 	padding: 4px;
+// }
 
-input {
-	display: block;
-	margin: 10px auto;
-	padding: 4px;
-}
+// // Keyup Validation styles
 
-// Keyup Validation styles
+// .success {
+// 	border: 2px solid limegreen;
+// }
 
-.success {
-	border: 2px solid limegreen;
-}
+// .error {
+// 	border: 2px solid crimson;
+// }
 
-.error {
-	border: 2px solid crimson;
-}
+// be careful, class names are same as for another project - chatroom.
+// hence I have disabled them for now.

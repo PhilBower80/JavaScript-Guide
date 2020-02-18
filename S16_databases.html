@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="assets\favicon_io\favicon-16x16.png" rel="icon" type="image/x-icon" />
+  <title>Javascript Tutorial</title>
+  <script src="https://kit.fontawesome.com/0a4ce35ecc.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<header class="container">
+  <a href="index.html"><i class="fab fa-js js-icon"></i></a>
+  <h1>Guide to Javascript</h1>
+
+
+  <div id="burger-container">
+    <div id="burger">
+      <a>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <h2>Databases (Firebase)</h1>
+</div>
+
+
+<div class="container my-5">
+  <h3>Recipes</h2>
+    <ul>
+    </ul>
+    <form action="">
+      <label for="recipe">Add a new recipe:</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="recipe" required>
+        <div class="input-group-amend">
+          <input type="submit" value="add" class="btn btn-outline-secondary">
+        </div>
+      </div>
+    </form>
+    <button>Unsubscribe from changes</button>
+</div>
+
+
+
+<footer class="container">
+
+  <div>
+    <p>&copy; Copyright <a href="about.html">Philip Bower</a> 2020</p>
+  </div>
+
+</footer>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script> -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCBpdQzyZsYh4JvaqoKg4UEIEzfWFmtm8c",
+    authDomain: "udemy-modern-javascript-d5659.firebaseapp.com",
+    databaseURL: "https://udemy-modern-javascript-d5659.firebaseio.com",
+    projectId: "udemy-modern-javascript-d5659",
+    storageBucket: "udemy-modern-javascript-d5659.appspot.com",
+    messagingSenderId: "1051490285561",
+    appId: "1:1051490285561:web:3a99856e6e248abceb6f28",
+    measurementId: "G-5QBCQKJ1HV"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  // firebase.analytics();
+</script>
+
+<script src="JS\burgerMenu.js"></script>
+<!-- <script src="JS\Section_16_databases_(firebase)\app.js"></script> -->
+<script src="JS\Section_16_databases_(firebase)\app2.js"></script>
+</body>
+
+</html>

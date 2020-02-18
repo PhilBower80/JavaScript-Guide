@@ -1,0 +1,15 @@
+.max-width-600 {
+	.container {
+		max-width: 600px;
+	}
+}
+
+.btn {
+	background: #465223;
+	color: #a3d82f;
+	outline: none !important;
+	box-shadow: none !important;
+	&:focus {
+		outline: none !important;
+	}
+}

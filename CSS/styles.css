@@ -151,12 +151,12 @@ footer a:link {
   text-decoration: none;
 }
 
-footer a:hover {
-  color: #f22872;
-}
-
 footer a:visited {
   color: #f28221;
+}
+
+footer a:hover {
+  color: #f22872;
 }
 
 pre {
@@ -245,28 +245,23 @@ pre {
   padding: 6px 10px;
 }
 
-form {
-  width: 300px;
-  margin: 40px auto;
-  background: white;
-  padding: 10px;
-}
-
-input {
-  display: block;
-  margin: 10px auto;
-  padding: 4px;
-}
-
-.success {
-  border: 2px solid limegreen;
-}
-
-.error {
-  border: 2px solid crimson;
-}
-
 .clock {
   font-size: 4em;
+}
+
+.max-width-600 .container {
+  max-width: 600px;
+}
+
+.btn {
+  background: #465223;
+  color: #a3d82f;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.btn:focus {
+  outline: none !important;
 }
 /*# sourceMappingURL=styles.css.map */
