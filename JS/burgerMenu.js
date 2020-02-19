@@ -1,6 +1,6 @@
 window.onload = function() {
 	document
-		.getElementById('burger-container')
+		.querySelector('#burger-container')
 		.addEventListener('click', function() {
 			this.classList.toggle('open');
 		});

@@ -15,4 +15,4 @@ const talk2 = function(name = 'luigi', time = 'night') {
 	console.log(`Good ${time} ${name}`);
 };
 
-talk2('Phil'); // arguments must be passed in the sdame order as parameters are set. In this cas eonly one argument is being passed so it overwrite the first parameter.
+talk2('Phil'); // arguments must be passed in the same order as parameters are set. In this cas eonly one argument is being passed so it overwrite the first parameter.

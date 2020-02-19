@@ -163,6 +163,43 @@ pre {
   color: #f28221;
 }
 
+.pb-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: blue;
+  color: red;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.sidebar li {
+  width: 250px;
+  height: 75px;
+  margin: 10px;
+  background-color: brown;
+  text-align: center;
+}
+
 @-webkit-keyframes slide-avatar {
   0% {
     top: -500px;

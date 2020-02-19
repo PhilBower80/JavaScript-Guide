@@ -1,4 +1,4 @@
-// Callbacks & foreach
+// Callbacks & forEach
 
 // Callback method
 

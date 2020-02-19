@@ -31,11 +31,35 @@
     </div>
   </header>
 
-  <div class="container">
+  <div class="container my-5">
     <h2>Functions & Methods</h2>
   </div>
 
-  <div class="container">
+  <div class="container my-5 border">
+    <h3>Arguments & Parameters</h3>
+    <pre>
+      const talk = function(name) {
+      // name is a parameter
+      console.log(`Good day ${name}`);
+      };
+
+      talk('Phil'); // Phil is an argument which is passed as a parameter in the function
+
+      // You can set default parameters also, see below...
+      const talk2 = function(name = 'luigi', time = 'night') {
+      // name is a parameter
+      console.log(`Good ${time} ${name}`);
+      };
+
+      talk2('Phil'); // arguments must be passed in the same order as parameters are set. In this case only one argument
+      is being passed so it overwrite the first parameter.
+    </pre>
+  </div>
+
+
+  <div class="container my-5 border">
+    <h3>Callback functions in action</h3>
+    <p>refer to JS file 36</p>
     <ul class="people"></ul>
   </div>
 
@@ -50,7 +74,7 @@
 
 
   <script src="JS\burgerMenu.js"></script>
-  <script src="JS\Section_4_Functions_&_Methods\36_Callback_Function_In_Action.js"></script>
+  <script src="JS\Section_4_Functions_&_Methods\4.36_Callback_Function_In_Action.js"></script>
 </body>
 
 </html>
