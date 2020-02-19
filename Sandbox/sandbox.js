@@ -72,14 +72,3 @@ NameList.addName('Mavis');
 NameList.addName('Derek');
 NameList.addName('Clyde');
 // console.log(NameList.names);
-
-// SIDEBAR
-
-// const burgerMenu = document.querySelector('#burger-container');
-// const sidebar = document.querySelector('.sidebar');
-
-// if (sidebar.classList.contains === 'open') {
-// 	sidebar.classList.visibility = 'visible';
-// } else {
-// 	sidebar.classList.visibility = 'hidden';
-// }

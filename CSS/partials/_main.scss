@@ -62,7 +62,7 @@ header {
 }
 
 // AVATAR
-//  this probably needs moving. Profile pic to be on about.html
+
 .avatar {
 	position: relative;
 	animation-name: slide-avatar;
@@ -191,12 +191,11 @@ pre {
 
 // SIDEBAR
 
-.sidebar {
+.nav-sidebar {
 	position: fixed;
 	top: 0;
 	left: 0;
 	visibility: hidden;
-	// visibility: visible;
 
 	li {
 		width: 250px;

@@ -185,14 +185,14 @@ pre {
   cursor: pointer;
 }
 
-.sidebar {
+.nav-sidebar {
   position: fixed;
   top: 0;
   left: 0;
   visibility: hidden;
 }
 
-.sidebar li {
+.nav-sidebar li {
   width: 250px;
   height: 75px;
   margin: 10px;
