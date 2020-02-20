@@ -1,205 +1,6 @@
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  font-family: 'Fira Code', monospace;
-  background-color: #262621;
-  color: #f28221;
-}
-
-.items {
-  text-align: center;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  margin: 50px 0;
-  font-size: 1.75em;
-}
-
-header a:link {
-  text-decoration: none;
-}
-
-header a:hover {
-  color: #f22872;
-}
-
-header a:visited {
-  color: #f28221;
-}
-
-header a .js-icon {
-  display: block;
-  padding: 0 10px 0 10px;
-  font-size: 100px;
-}
-
-.avatar {
-  position: relative;
-  -webkit-animation-name: slide-avatar;
-          animation-name: slide-avatar;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-.avatar img {
-  border-radius: 50%;
-}
-
-#burger-container {
-  margin-right: 10px;
-}
-
-#burger {
-  cursor: pointer;
-  display: block;
-}
-
-#burger span {
-  background: #f28221;
-  display: block;
-  width: 50px;
-  height: 7px;
-  margin-bottom: 10px;
-  position: relative;
-  top: 0;
-  -webkit-transition: all ease-out 0.4s;
-  transition: all ease-out 0.4s;
-}
-
-#burger-container.open span:nth-child(1) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: 17px;
-}
-
-#burger-container.open span:nth-child(2) {
-  left: -50px;
-  opacity: 0;
-}
-
-#burger-container.open span:nth-child(3) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: -17px;
-}
-
-.menu-btn a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 520px;
-  height: 75px;
-  background-color: #a3d82f;
-  color: #f22872;
-  border: 1px solid #666;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  margin: 10px;
-  padding: 0;
-  font-size: 1.5em;
-}
-
-.menu-btn a:link {
-  text-decoration: none;
-}
-
-.menu-btn a:hover {
-  color: black;
-}
-
-footer {
-  text-align: center;
-  margin: 50px auto;
-}
-
-footer a:link {
-  text-decoration: none;
-}
-
-footer a:visited {
-  color: #f28221;
-}
-
-footer a:hover {
-  color: #f22872;
-}
-
-pre {
-  color: #f28221;
-}
-
-.pb-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: blue;
-  color: red;
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 25px;
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-.nav-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-}
-
-.nav-sidebar li {
-  width: 250px;
-  height: 75px;
-  margin: 10px;
-  background-color: brown;
-  text-align: center;
-}
-
 @-webkit-keyframes slide-avatar {
   0% {
     top: -500px;
@@ -208,7 +9,6 @@ pre {
     top: 0px;
   }
 }
-
 @keyframes slide-avatar {
   0% {
     top: -500px;
@@ -216,25 +16,6 @@ pre {
   100% {
     top: 0px;
   }
-}
-
-.event-basics-ul li {
-  cursor: pointer;
-  list-style-type: none;
-  max-width: 200px;
-  padding: 8px;
-  margin: 8px auto;
-  background: #eee;
-  border: 1px dotted #ddd;
-}
-
-.box {
-  width: 200px;
-  height: 200px;
-  margin: 10px 0;
-  background: #eee;
-  text-align: center;
-  padding: 20px;
 }
 
 .form-button {
@@ -300,5 +81,244 @@ pre {
 
 .btn:focus {
   outline: none !important;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.time {
+  font-size: 0.7em;
+  color: #999;
+}
+
+.update-mssg {
+  text-align: center;
+  margin: 20px auto;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #262621;
+  color: #f28221;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+pre {
+  color: #fff;
+}
+
+header {
+  background-color: #efeeee;
+  margin-bottom: 50px;
+  height: 120px;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container a:link {
+  text-decoration: none;
+}
+
+header .container a:visited {
+  color: #f28221;
+}
+
+header .container a:hover {
+  color: #f22872;
+}
+
+header .container a .js-icon {
+  display: block;
+  padding: 0 10px 0 10px;
+  font-size: 75px;
+}
+
+header .container h1 {
+  font-size: 3em;
+}
+
+#burger-container {
+  margin-right: 10px;
+}
+
+#burger {
+  cursor: pointer;
+  display: block;
+}
+
+#burger span {
+  background: #f28221;
+  display: block;
+  width: 50px;
+  height: 7px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-out 0.4s;
+  transition: all ease-out 0.4s;
+}
+
+#burger-container.open span:nth-child(1) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 17px;
+}
+
+#burger-container.open span:nth-child(2) {
+  left: -50px;
+  opacity: 0;
+}
+
+#burger-container.open span:nth-child(3) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -17px;
+}
+
+.menu-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 520px;
+  height: 75px;
+  background-color: #465223;
+  color: #a3d82f;
+  border: 1px solid #666;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+  font-size: 1.25em;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.menu-btn a:link {
+  text-decoration: none;
+}
+
+.menu-btn a:hover {
+  color: black;
+}
+
+footer {
+  text-align: center;
+  margin: 50px auto;
+}
+
+footer a:link {
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #f28221;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.avatar {
+  position: relative;
+  -webkit-animation-name: slide-avatar;
+          animation-name: slide-avatar;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.avatar img {
+  border-radius: 50%;
+}
+
+.event-basics-ul li {
+  cursor: pointer;
+  list-style-type: none;
+  max-width: 200px;
+  padding: 8px;
+  margin: 8px auto;
+  background: #eee;
+  border: 1px dotted #ddd;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+  background: #eee;
+  text-align: center;
+  padding: 20px;
+}
+
+.pb-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: blue;
+  color: red;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.nav-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.nav-sidebar li {
+  width: 250px;
+  height: 75px;
+  margin: 10px;
+  background-color: brown;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

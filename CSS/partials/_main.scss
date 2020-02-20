@@ -21,9 +21,9 @@ body {
 }
 
 // what is this??? // // // //
-.items {
-	text-align: center;
-}
+// .items {
+// 	text-align: center;
+// }
 // // // // // // //
 
 ul {
@@ -31,50 +31,46 @@ ul {
 	padding: 0;
 }
 
+pre {
+	color: #fff;
+}
+
 // end of BASE STYLES
 
 // HOME PAGE
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
-	margin: 50px 0;
-	font-size: 1.75em;
+	background-color: #efeeee;
+	margin-bottom: 50px;
+	height: 120px;
 
-	a {
-		&:link {
-			text-decoration: none;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		a {
+			&:link {
+				text-decoration: none;
+			}
+			&:visited {
+				color: #f28221;
+			}
+			&:hover {
+				color: #f22872;
+			}
+			.js-icon {
+				display: block;
+				padding: 0 10px 0 10px;
+				font-size: 75px;
+			}
 		}
-		&:hover {
-			color: #f22872;
-		}
-		&:visited {
-			color: #f28221;
-		}
-		.js-icon {
-			display: block;
-			padding: 0 10px 0 10px;
-			font-size: 100px;
+
+		h1 {
+			font-size: 3em;
 		}
 	}
 }
-
-// AVATAR
-
-.avatar {
-	position: relative;
-	animation-name: slide-avatar;
-	animation-duration: 4s;
-	animation-timing-function: ease-in-out;
-
-	img {
-		border-radius: 50%;
-	}
-}
-
-// end of AVATAR
 
 // BURGER MENU
 
@@ -122,15 +118,18 @@ header {
 		display: flex;
 		max-width: 520px;
 		height: 75px;
-		background-color: #a3d82f;
-		color: #f22872;
+		background-color: #465223;
+		color: #a3d82f;
 		border: 1px solid #666;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 		margin: 10px;
 		padding: 0;
-		font-size: 1.5em;
+		font-size: 1.25em;
+		overflow: hidden;
+		border-radius: 0.25rem;
+		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 
 		&:link {
 			text-decoration: none;
@@ -153,21 +152,52 @@ footer {
 			color: #f28221;
 		}
 		&:hover {
-			color: #f22872;
+			text-decoration: underline;
 		}
 	}
 }
 
 // end of HOME PAGE
 
-// Local Storage
-// check out code blocks <pre> and <code> for Bootstrap, may be able to style these better!?
+// ABOUT PAGE
 
-pre {
-	color: #f28221;
+.avatar {
+	position: relative;
+	animation-name: slide-avatar;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+
+	img {
+		border-radius: 50%;
+	}
 }
 
-// end of Local Storage
+// end of ABOUT
+
+// the DOM
+
+.event-basics-ul {
+	li {
+		cursor: pointer;
+		list-style-type: none;
+		max-width: 200px;
+		padding: 8px;
+		margin: 8px auto;
+		background: #eee;
+		border: 1px dotted #ddd;
+	}
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	margin: 10px 0;
+	background: #eee;
+	text-align: center;
+	padding: 20px;
+}
+
+// end of THE DOM
 
 // SANDBOX
 

@@ -10,7 +10,7 @@ const myFunc = callbackFunc => {
 
 myFunc(value => {
 	// do something
-	console.log(value);
+	console.log('simple callback example:', value);
 });
 
 // forEach method

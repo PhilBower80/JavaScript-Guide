@@ -6,27 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="assets\favicon_io\favicon-16x16.png" rel="icon" type="image/x-icon" />
-  <title>Javascript Tutorial</title>
   <script src="https://kit.fontawesome.com/0a4ce35ecc.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+  <title>Guide to JavaScript</title>
 </head>
 
 <body>
 
-  <header class="container">
-    <a href="index.html"><i class="fab fa-js js-icon"></i></a>
-    <h1>Guide to Javascript</h1>
-
-    <div id="burger-container">
-      <div id="burger">
-        <a>
-          <span>&nbsp;</span>
-          <span>&nbsp;</span>
-          <span>&nbsp;</span>
-        </a>
+  <header class="d-flex justify-content-center">
+    <div class="container">
+      <a href="index.html"><i class="fab fa-js js-icon"></i></a>
+      <h1>Guide to Javascript</h1>
+      <div id="burger-container">
+        <div id="burger">
+          <a>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -38,27 +40,63 @@
   <div class="container my-5 border">
     <h3>Arguments & Parameters</h3>
     <pre>
-      const talk = function(name) {
-      // name is a parameter
-      console.log(`Good day ${name}`);
-      };
+      <code>
+        const talk = function(name) {
+        // name is a parameter
+        console.log(`Good day ${name}`);
+        };
 
-      talk('Phil'); // Phil is an argument which is passed as a parameter in the function
+        talk('Phil'); // Phil is an argument which is passed as a parameter in the function
 
-      // You can set default parameters also, see below...
-      const talk2 = function(name = 'luigi', time = 'night') {
-      // name is a parameter
-      console.log(`Good ${time} ${name}`);
-      };
+        // You can set default parameters also, see below...
+        const talk2 = function(name = 'luigi', time = 'night') {
+        // name is a parameter
+        console.log(`Good ${time} ${name}`);
+        };
 
-      talk2('Phil'); // arguments must be passed in the same order as parameters are set. In this case only one argument
-      is being passed so it overwrite the first parameter.
+        talk2('Phil'); // arguments must be passed in the same order as parameters are set. In this case only one argument
+        is being passed so it overwrite the first parameter.
+      </code>
     </pre>
   </div>
 
 
+
+
+  <div class="container my-5 border">
+    <h3>Callback Functions</h3>
+    <p>refer to JS file 35</p>
+    <pre>
+      <code>
+        const myFunc = callbackFunc => {
+          // do something
+          let value = 50;
+          callbackFunc(value);
+        };
+        
+        myFunc(value => {
+          // do something
+          console.log(value);
+        });
+      </code>
+    </pre>
+  </div>
+
+
+
   <div class="container my-5 border">
     <h3>Callback functions in action</h3>
+    <pre>
+        const ul = document.querySelector('.people');
+        const people2 = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+        let html = ``;
+
+        people2.forEach(person => {
+          html += `&lt;li style="color: purple"&gt;${person}&lt;/li&gt;;
+        });
+
+        ul.innerHTML = html;
+    </pre>
     <p>refer to JS file 36</p>
     <ul class="people"></ul>
   </div>
@@ -74,6 +112,7 @@
 
 
   <script src="JS\burgerMenu.js"></script>
+  <script src="JS\Section_4_Functions_&_Methods\4.35_Foreach_Methods_and_Callbacks.js"></script>
   <script src="JS\Section_4_Functions_&_Methods\4.36_Callback_Function_In_Action.js"></script>
 </body>
 
