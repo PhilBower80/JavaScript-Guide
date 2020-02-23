@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="assets\favicon_io\favicon-16x16.png" rel="icon" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/0a4ce35ecc.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+  <title>Guide to JavaScript</title>
+</head>
+
+<body>
+  <header class="d-flex justify-content-center">
+    <div class="container">
+      <a href="index.html"><i class="fab fa-js js-icon"></i></a>
+      <h1>Guide to Javascript</h1>
+      <div id="burger-container">
+        <div id="burger">
+          <a>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- container & title -->
+  <div class="max-width-600">
+    <div class="container my-4">
+      <h2 class="my-4 text-center">Real-time Chatroom</h2>
+
+
+
+      <!-- buttons for chatrooms -->
+      <div class="chat-rooms mb-3 text-center">
+        <div class="my-2">Choose a chatroom</div>
+        <button class="btn" id="general">#general</button>
+        <button class="btn" id="gaming">#gaming</button>
+        <button class="btn" id="music">#music</button>
+        <button class="btn" id="ninjas">#ninjas</button>
+      </div>
+
+
+      <!-- chat list / window -->
+      <div class="chat-window">
+        <ul class="chat-list list-group"></ul>
+      </div>
+
+
+      <!-- new chat form -->
+      <form action="" class="new-chat my-3">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Your message:</div>
+          </div>
+          <input type="text" id="message" class="form-control" required>
+          <div class="input-group-append">
+            <input type="submit" class="btn" value="send">
+          </div>
+        </div>
+      </form>
+
+
+      <!-- update name form -->
+      <form action="" class="new-name my-3">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Update name:</div>
+          </div>
+          <input type="text" id="name" class="form-control" required>
+          <div class="input-group-append">
+            <input type="submit" class="btn" value="update">
+          </div>
+        </div>
+        <div class="update-mssg"></div>
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <footer class="container">
+
+    <div>
+      <p>&copy; Copyright <a href="../../about.html">Philip Bower</a> 2020</p>
+    </div>
+
+  </footer>
+
+  <script src="../../JS\burgerMenu.js"></script>
+  <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCBpdQzyZsYh4JvaqoKg4UEIEzfWFmtm8c",
+      authDomain: "udemy-modern-javascript-d5659.firebaseapp.com",
+      databaseURL: "https://udemy-modern-javascript-d5659.firebaseio.com",
+      projectId: "udemy-modern-javascript-d5659",
+      storageBucket: "udemy-modern-javascript-d5659.appspot.com",
+      messagingSenderId: "1051490285561",
+      appId: "1:1051490285561:web:3a99856e6e248abceb6f28",
+      measurementId: "G-5QBCQKJ1HV"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  // firebase.analytics();
+  </script>
+
+  <script src="chat.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+
+
+
+
+</body>
+
+</html>
