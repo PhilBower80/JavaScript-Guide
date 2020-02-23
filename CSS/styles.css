@@ -3,18 +3,18 @@
 /* Color Theme Swatches in HSLA */
 @-webkit-keyframes slide-avatar {
   0% {
-    top: -500px;
+    left: -600px;
   }
   100% {
-    top: 0px;
+    left: 0px;
   }
 }
 @keyframes slide-avatar {
   0% {
-    top: -500px;
+    left: -600px;
   }
   100% {
-    top: 0px;
+    left: 0px;
   }
 }
 
@@ -260,6 +260,7 @@ footer a:hover {
           animation-duration: 4s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  margin-bottom: 30px;
 }
 
 .avatar img {
