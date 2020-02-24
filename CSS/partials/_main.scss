@@ -72,6 +72,18 @@ header {
 	}
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + main {
+	padding-top: 120px;
+}
+
 // BURGER MENU
 
 #burger-container {
@@ -224,8 +236,8 @@ footer {
 
 .nav-sidebar {
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 120px;
+	right: 0;
 	visibility: hidden;
 
 	li {
@@ -238,3 +250,20 @@ footer {
 }
 
 // end of SIDEBAR
+
+// COOKIE
+
+.cookie-wrapper {
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1000;
+	width: 100%;
+	background-color: slategray;
+	text-align: center;
+	.cookie-close {
+		cursor: pointer;
+	}
+}
+
+// end of COOKIE

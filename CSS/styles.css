@@ -164,6 +164,18 @@ header .container h1 {
   font-size: 3em;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + main {
+  padding-top: 120px;
+}
+
 #burger-container {
   margin-right: 10px;
 }
@@ -310,8 +322,8 @@ footer a:hover {
 
 .nav-sidebar {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 120px;
+  right: 0;
   visibility: hidden;
 }
 
@@ -321,5 +333,19 @@ footer a:hover {
   margin: 10px;
   background-color: brown;
   text-align: center;
+}
+
+.cookie-wrapper {
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+  width: 100%;
+  background-color: slategray;
+  text-align: center;
+}
+
+.cookie-wrapper .cookie-close {
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
