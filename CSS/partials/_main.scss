@@ -245,7 +245,7 @@ footer {
 	width: 270px;
 	height: calc(100vh - 120px); //key
 	background-color: green;
-	transition: 0.4s; //key
+	transition: 0.5s; //key
 	z-index: 500;
 
 	li {
@@ -266,11 +266,21 @@ body.active {
 	overflow-y: hidden;
 }
 
+// body {
+// 	overflow-y: hidden;
+// }
+
+// .scrollable {
+// 	overflow-y: scroll;
+// 	max-height: calc(100vh - 120px);
+// }
+
 // end of SIDEBAR
 
 // COOKIE
 
 .cookie-wrapper {
+	display: block;
 	justify-content: center;
 	align-items: center;
 	position: fixed;

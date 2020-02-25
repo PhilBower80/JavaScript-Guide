@@ -337,8 +337,8 @@ footer a:hover {
   width: 270px;
   height: calc(100vh - 120px);
   background-color: green;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 500;
 }
 
@@ -359,6 +359,7 @@ body.active {
 }
 
 .cookie-wrapper {
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
