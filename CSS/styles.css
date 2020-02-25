@@ -128,6 +128,10 @@ header {
   background-color: #efeeee;
   margin-bottom: 50px;
   height: 120px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 header .container {
@@ -174,6 +178,7 @@ header .container h1 {
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + main {
   padding-top: 120px;
+  margin-top: 50px;
 }
 
 #burger-container {
@@ -195,6 +200,10 @@ header .container h1 {
   top: 0;
   -webkit-transition: all ease-out 0.4s;
   transition: all ease-out 0.4s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #burger-container.open span:nth-child(1) {
@@ -321,31 +330,50 @@ footer a:hover {
 }
 
 .nav-sidebar {
-  position: fixed;
+  position: absolute;
   top: 120px;
-  right: 0;
-  visibility: hidden;
+  right: -270px;
+  width: 270px;
+  height: calc(100vh - 120px);
+  background-color: green;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .nav-sidebar li {
   width: 250px;
   height: 75px;
   margin: 10px;
-  background-color: brown;
+  background-color: maroon;
   text-align: center;
 }
 
+.nav-sidebar.active {
+  right: 0;
+}
+
 .cookie-wrapper {
-  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
-  bottom: 0px;
   z-index: 1000;
+  bottom: 0px;
   width: 100%;
+  height: 35px;
+  margin: 0;
   background-color: slategray;
   text-align: center;
 }
 
 .cookie-wrapper .cookie-close {
   cursor: pointer;
+}
+
+.cookie-wrapper p {
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */
