@@ -113,6 +113,7 @@ body {
   font-family: 'Fira Code', monospace;
   background-color: #262621;
   color: #f28221;
+  overflow-x: hidden;
 }
 
 ul {
@@ -338,6 +339,7 @@ footer a:hover {
   background-color: green;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  z-index: 500;
 }
 
 .nav-sidebar li {
@@ -350,6 +352,10 @@ footer a:hover {
 
 .nav-sidebar.active {
   right: 0;
+}
+
+body.active {
+  overflow-y: hidden;
 }
 
 .cookie-wrapper {

@@ -18,6 +18,7 @@ body {
 	font-family: 'Fira Code', monospace;
 	background-color: $black;
 	color: #f28221;
+	overflow-x: hidden;
 }
 
 // what is this??? // // // //
@@ -245,6 +246,7 @@ footer {
 	height: calc(100vh - 120px); //key
 	background-color: green;
 	transition: 0.4s; //key
+	z-index: 500;
 
 	li {
 		width: 250px;
@@ -256,8 +258,12 @@ footer {
 }
 
 .nav-sidebar.active {
-	// this class is toggled/added via JS
+	// this class is toggled/added via JS (burgerMenu.js)
 	right: 0; // key
+}
+
+body.active {
+	overflow-y: hidden;
 }
 
 // end of SIDEBAR

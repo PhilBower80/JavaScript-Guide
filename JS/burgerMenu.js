@@ -14,7 +14,9 @@
 
 const burgerMenu = document.querySelector('#burger-container');
 const sidebar = document.querySelector('.nav-sidebar');
+const mainContent = document.querySelector('body');
 
 burgerMenu.addEventListener('click', e => {
 	sidebar.classList.toggle('active');
+	mainContent.classList.toggle('active');
 });
