@@ -77,7 +77,7 @@ cityForm.addEventListener('submit', e => {
 
 	// update UI with new city
 	updateCity(city)
-		// .then(data => console.log(data)) // use to get key info from console log to update HTML then replaced by the following line.
+		// .then(data => console.log('test', data)) // use to get key info from console log to update HTML then replaced by the following line.
 		.then(data => updateUI(data))
 		.catch(err => console.log(err));
 
@@ -85,7 +85,7 @@ cityForm.addEventListener('submit', e => {
 	localStorage.setItem('city', city);
 });
 
-// Check local storage and set search to last city searchedf
+// Check local storage and set search to last city searched
 if (localStorage.getItem('city')) {
 	updateCity(localStorage.getItem('city'))
 		.then(data => updateUI(data))

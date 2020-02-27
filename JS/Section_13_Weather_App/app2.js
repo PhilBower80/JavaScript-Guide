@@ -59,7 +59,7 @@ cityForm.addEventListener('submit', e => {
 	localStorage.setItem('city', city);
 });
 
-// Check local storage and set search to last city searchedf
+// Check local storage and set search to last city searched
 if (localStorage.getItem('city')) {
 	forecast
 		.updateCity(localStorage.getItem('city'))

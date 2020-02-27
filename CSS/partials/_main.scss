@@ -266,16 +266,27 @@ body.active {
 	overflow-y: hidden;
 }
 
+// end of SIDEBAR
+
+// TEST SCROLLBAR
 // body {
 // 	overflow-y: hidden;
 // }
 
-// .scrollable {
-// 	overflow-y: scroll;
-// 	max-height: calc(100vh - 120px);
+// main-outer {
+// 	max-height: 100%;
+// 	overflow: auto;
+// 	z-index: 1000;
+// 	display: block;
 // }
 
-// end of SIDEBAR
+// .scrollable {
+// 	overflow-y: auto;
+// 	max-height: 100%;
+// 	// max-height: calc(100vh - 120px);
+// }
+
+// end of TEST SCROLLBAR
 
 // COOKIE
 
