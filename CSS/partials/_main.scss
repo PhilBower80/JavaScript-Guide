@@ -112,7 +112,7 @@ header {
 
 #burger-container.open span {
 	&:nth-child(1) {
-		transform: rotate(-45deg);
+		transform: rotate(-405deg);
 		top: 17px; // this equals span height + span margin
 	}
 	&:nth-child(2) {
@@ -122,7 +122,7 @@ header {
 	}
 
 	&:nth-child(3) {
-		transform: rotate(45deg);
+		transform: rotate(405deg);
 		top: -17px; // this equals span height + span margin
 	}
 }
